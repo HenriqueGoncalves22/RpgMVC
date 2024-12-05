@@ -1,4 +1,4 @@
-@model RpgMvc.Models.PersonagemViewModel
+@model RpgMVC.Models.PersonagemViewModel
 @{
     ViewBag.Title = "Novo Personagem";
 }
@@ -31,13 +31,12 @@
             </div>
         </div>
 
-         <div class="form-group">
+        <div class="form-group">
             @Html.LabelFor(model => model.Classe, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-6">
                 
-                @Html.DropDownListFor(model => model.Classe , Html.GetEnumSelectList(typeof(RpgMvc.Models.Enuns.ClasseEnum)), 
+                @Html.DropDownListFor(model => model.Classe , Html.GetEnumSelectList(typeof(RpgMVC.Models.Enuns.ClasseEnum)), 
                     "---Selecione---", new { @class = "form-control" })
-            
             </div>
         </div>  
 
